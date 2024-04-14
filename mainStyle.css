@@ -1,0 +1,249 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #fff;
+}
+.header { 
+    background-color:#fff;
+}
+
+.header h1 { 
+    text-align: center;
+    left: 500px;
+    font-size: 70px;
+    color: black;
+}
+
+.header img { 
+    max-width: 450px;
+    height: 150px;
+    position: absolute;
+    top:0%;
+    right:20%;
+}
+.slider{
+    width: contain;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 700px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    left: 50%;
+    width: 100%;
+    height: 700px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: relative;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    left: 500px;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 660px;
+    left: 500px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+        
+  .intro h2{
+    margin-left: 400px;
+    top: 500%;
+    font-size: 80px;
+    right: 500px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: black;
+  }
+        
+  .intro p{
+    margin-right: 480px;
+    margin-left: 480px;
+    font-size: 25px;
+    text-align: center;
+    color: darkgrey;
+    font-style: oblique;
+  }
+
+  .roomtypes { 
+    margin-right: 300px;
+    margin-left: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+    background: white;
+  } 
+
+ .roomtypes .room1, .roomtypes .room2, .roomtypes .room3, .roomtypes .room4, .roomtypes .room5 { 
+    border: 3px solid whitesmoke;
+    background-color: white;
+  }
+
+  .roomtypes h2 { 
+    text-align: left;
+    margin-top: 30px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+   .roomtypes .room1 p, .roomtypes .room2 p, .roomtypes .room4 p, .roomtypes .room5 p { 
+    font-style:normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .roomtypes .room3 p{ 
+    font-style:normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .roomtypes .room1 img, .roomtypes .room3 img, .roomtypes .room5 img{ 
+    width: 70%;
+    padding-top: 0%;
+    float: left;
+    margin-right: 40px;
+    object-fit: contain;
+  }
+
+  .roomtypes .room2 img, .roomtypes .room4 img { 
+    width: 70%;
+    padding-top: 0%;
+    float: right;
+    margin-left: 40px;
+    object-fit: contain;
+  }
+  
+  .roomtypes .room1 .Bookbtn, .roomtypes .room2 .Bookbtn, .roomtypes .room3 .Bookbtn, .roomtypes .room4 .Bookbtn, .roomtypes .room5 .Bookbtn { 
+  background-color: gray; 
+  border: none;
+  color: white;
+  padding: 15px 75px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  border-radius: 8px;
+  transition-duration: 1s;
+  width: 250px;
+  margin-right: 80px;
+  margin-left: 70px;
+  }
+
+  .roomtypes .room1 .Bookbtn:hover, .roomtypes .room2 .Bookbtn:hover, .roomtypes .room3 .Bookbtn:hover, .roomtypes .room4 .Bookbtn:hover, .roomtypes .room5 .Bookbtn:hover{
+    background-color: gray; 
+    color: black;
+  }
+
+ .roomtypes .room1 .lrnMorebtn, .roomtypes .room2 .lrnMorebtn, .roomtypes .room3 .lrnMorebtn, .roomtypes .room4 .lrnMorebtn, .roomtypes .room5 .lrnMorebtn { 
+    background-color: gray; 
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    width: 250px;
+    margin-left: 70px;
+}
+  
+.roomtypes .room1 .lrnMorebtn:hover, .roomtypes .room2 .lrnMorebtn:hover, .roomtypes .room3 .lrnMorebtn:hover, .roomtypes .room4 .lrnMorebtn:hover, .roomtypes .room5 .lrnMorebtn:hover {
+      background-color: gray; 
+      color: black;
+}

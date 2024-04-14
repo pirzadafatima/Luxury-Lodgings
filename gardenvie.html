@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Garden-View Room</title>
+        <link rel = "stylesheet" href = "deluxestyle.css">
+    </head>
+<body>
+    <header>
+        <img src="images/gmain.jpg" alt="">
+        <section class='pic'>
+           <h1>Garden-View Room</h1>
+          <a href="booking.php"> <button>Book Now</button> </a>
+        </section>
+     </header>
+      <br><br>
+      <div class="flex-container">
+       
+          <div class="c1">
+            <h1>"Where nature meets luxury!"</h1>
+            <br><br>
+            <h2>Features:</h2>
+             <p> Our Garden-View Rooms feature:<br><br>
+                •   King size bed and sofa cum bed <br>
+                •	Elegant and tasteful decor with a nature-inspired theme <br>
+                •	Glass Windows with direct view of gardens <br>
+                •	Comfortable seating area with chairs or a sofa<br>
+                •	Private ensuite bathroom with modern fixtures and luxurious toiletries<br>
+                •	Flat-screen TV with premium channels<br>
+                •	Complimentary wireless internet<br>
+                •	Mini fridge <br>
+                •	Tea and coffee maker for in-room hot beverages<br>
+                •	Air conditioning and heating<br>
+                •	24-hour room service<br>
+                •	Emergency Medical services <br>
+                •	Valet and laundry services <br>
+                •	Daily housekeeping and turndown service for a clean and well-maintained room<br>
+            </p>
+          </div>
+        
+  
+          <div class="c2">
+            <p1>Immerse yourself in the beauty of nature with our Garden View Room. Overlooking our meticulously landscaped gardens, this room offers a serene and tranquil sanctuary 
+                for your stay. Wake up to the sight of colorful flowers, breathe in the fresh air, and experience the serenity of nature from the comfort of your elegantly appointed 
+                room.</p1>
+                <br><br>
+            <h2>Additional Information:</h2>
+            <p2>Ideal for 4-5 guests (up to 3 children)<br>
+                Number of garden view rooms available: 6 <br>
+                Location: On 1st and 2nd floors <br><br>
+                Please Note: Additional beds or rollaway beds to accommodate additional guests are subject to availability and additional charges.<br>
+                <h2>Price per night: $350</h2>
+            </p2>
+          </div>
+
+      </div>
+      <br><br>
+  <div class="row">
+    <h1>Image Gallery</h1><br><br>
+    <div class="column">
+      <img src="images/g1.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/g2.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/g3.png" alt="" onclick="myFunction(this);">
+    </div> 
+    <div class="column">
+        <img src="images/g4.png" alt="" onclick="myFunction(this);">
+      </div> 
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:60%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+  </script>
+</body>
+</html>

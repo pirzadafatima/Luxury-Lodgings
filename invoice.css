@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.invo,.bold,.username{
+    font-weight: 900;
+}
+.wrapper{
+    padding: 10px;
+}
+.invoice_wrapper{
+    width: 700px;
+}
+.logo_invoice,.bill_total{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.logo img{
+    width: 200px;
+
+}
+.logo_invoice{
+    display: flex;
+    align-items: center;
+}
+.title_wrap{
+    margin-left: 5px;
+}
+label{
+    font-size: larger;
+    font:bolder;
+}
+
+#Invoice_Label ,.title_wrap{
+
+    font-size: 28px;
+    font:bolder;
+}
+.Table_header{
+    background-color: rgb(20, 89, 174);
+    color: azure;
+}
+.Table_header.Row{
+    font-size: 18px;
+}
+.Row{
+    display: flex;
+    border: 1px solid;
+
+
+}
+.invoice_wrapper .Boddy .Row .Col{
+    padding: 10px;
+}
+.invoice_wrapper .Boddy .Table .Table_header .Row .Col.Col_no{
+    width: 5%;
+}
+.invoice_wrapper .Boddy .Table .Table_header .Row .Col.Col_item_name{
+    width: 45%;
+}
+.invoice_wrapper .Boddy .Table .Table_header .Row .Col.Col_quantity{
+    width: 20%;
+}
+.invoice_wrapper .Boddy .Table .Table_header .Row .Col.Col_price{
+    width: 10%;
+}
+.invoice_wrapper .Boddy .Table .Table_header .Row .Col.Col_Total{
+    width: 20%;
+}
+.invoice_wrapper .Boddy .Row .Col.Col_no{
+    width: 5%;
+}
+.invoice_wrapper .Boddy .Row .Col.Col_item_name{
+    width: 45%;
+}
+.invoice_wrapper .Boddy .Row .Col.Col_quantity{
+    width: 20%;
+}
+.invoice_wrapper .Boddy .Row .Col.Col_price{
+    width: 10%;
+}
+.invoice_wrapper .Boddy .Row .Col.Col_Total{
+    width: 20%;
+}
+.invoice_wrapper .Boddy .payment_wrap{
+    display: flex;
+align-items: flex-end;
+    justify-content: space-between;
+    padding:20px 0 30px;
+}
+.invoice_wrapper .Boddy .payment_wrap .payment_sec{
+    padding-left: 30px;
+}
+.invoice_wrapper .Boddy .payment_wrap .Total_sec{
+    width: 30%;
+}
+.invoice_wrapper .Boddy .payment_wrap .Total_sec p{
+    display: flex;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.invoice_wrapper .Boddy .payment_wrap .Total_sec p span{
+  
+    padding: 0px 10px; 
+}
+.invoice_wrapper .Boddy .payment_wrap .Total_sec p span:first-child{
+  
+width: 70%;
+}
+.invoice_wrapper .Boddy .payment_wrap .Total_sec p span:last-child{
+  
+    width: 30%;
+    text-align: right;
+ }
+ .invoice_wrapper .Boddy .payment_wrap .Total_sec p:last-child span{
+    background-color: rgb(20, 89, 174) ;
+    padding: 10px;
+    color: azure;
+ }
+    
+ 
+

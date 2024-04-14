@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Family Suite</title>
+        <link rel = "stylesheet" href = "deluxestyle.css">
+    </head>
+<body>
+    <header>
+        <img src="images/fmain.jpg" alt="">
+        <section class='pic'>
+           <h1>Family Suite</h1>
+          <a href="booking.php"> <button>Book Now</button> </a>
+        </section>
+     </header>
+      <br><br>
+      <div class="flex-container">
+       
+          <div class="c1">
+            <h1>"Where family fun and relaxation meet!"</h1>
+            <br><br>
+            <h2>Features:</h2>
+             <p> Our Family Suites feature:<br><br>
+                •	Spacious room with ample living space for families<br>
+                •	Multiple beds including queen -size beds, twin beds, bunk beds, or sofa beds <br>
+                •	Ensuite bathroom with modern fixtures and luxurious toiletries<br>
+                •	Flat-screen TV with kid-friendly channels for entertainment<br>
+                •	Tea and coffee maker for in-room hot beverages<br>
+                •	Air conditioning and heating <br>
+                •	Kitchenette with small refrigerator, a microwave oven, and a sink. <br>
+                •	Separate, comfortable lounge area with chairs, sofa, or lounge chairs for relaxation<br>
+                •	Child-friendly amenities such as baby cribs, high chairs, or baby monitors upon request<br>
+                •	Access to games such as scrabble, uno, foosball and many more board games <br>
+                •	Complimentary wireless internet for connectivity<br>
+                •	24-hour room service for convenience<br>
+                •	Daily housekeeping and turndown service <br>
+                •	Option for interconnecting rooms or suites for larger families or extended stays<br>
+            </p>
+          </div>
+        
+  
+          <div class="c2">
+            <p1>Create cherished memories with your loved ones in our spacious and welcoming Family Suite. With multiple bedrooms and a cozy living space, this suite offers ample 
+                room for the whole family to relax and bond. Enjoy the convenience of a kitchenette, and make yourself at home in this elegant sanctuary where family moments become 
+                unforgettable.</p1>
+                <br><br>
+            <h2>Additional Information:</h2>
+            <p2> Ideal for 5-6 guests (up to 4 children)<br>
+                Number of family suites available: 6<br>
+                Location: On all floors <br><br>
+                Please Note: Additional beds or rollaway beds to accommodate additional guests are subject to availability and additional charges.<br>
+                <h2>Price per night: $450</h2>
+            </p2>
+          </div>
+
+      </div>
+      <br><br>
+  <div class="row">
+    <h1>Image Gallery</h1><br><br>
+    <div class="column">
+      <img src="images/f1.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/f2.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/f3.png" alt="" onclick="myFunction(this);">
+    </div> 
+    <div class="column">
+        <img src="images/f4.png" alt="" onclick="myFunction(this);">
+      </div> 
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:60%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+  </script>
+</body>
+</html>

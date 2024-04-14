@@ -1,0 +1,176 @@
+
+body {
+
+  margin: 20px;
+  padding: 0;
+}
+
+
+.header {
+  background-color:#fff;
+  text-align: center;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.header img {
+  max-width: 200px;
+  height: 200px;
+}
+
+.information{
+margin: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.PickUpDate,.PickUptime,.returnDate,.returntime  {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #ccc;
+margin: 0px;
+padding: 0px;
+width: 200px;
+text-align: center;
+display: flex;
+align-content: flex-start;
+
+}
+.TotalBill{
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center; 
+}
+
+.TotalBill h2{
+  font-size: medium;
+  margin: 20px 0; 
+  text-align: right; 
+}
+
+.PickUpDate label,.PickUptime label,.returnDate label,.returntime label  {
+font-size: 16px;
+margin-bottom: 10px;
+text-align: center;
+display: flex;
+align-content: flex-start;
+}
+
+.PickUpDate input,.PickUptime input,.returnDate input,.returntime input {
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.BookBtn button :hover{
+box-shadow: 0 0 20px rgba(115, 36, 172, 0.5);
+-webkit-transform: scale(1.1);
+transform: scale(1.01);
+
+
+}
+.BookBtn button , .header {
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ccc;
+  margin: 10px auto; /* center the button horizontally */
+  padding: 20px; /* increase the padding to make the button larger */
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: inherit;
+  font-size: 15px;
+  background-color: rgb(2, 118, 118);
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Car-type {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+}
+
+.Car-type img {
+  
+  height: 250px;
+  margin-right: 20px;
+}
+
+.Car-type h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+}
+
+.Car-type p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.Car-type select {
+
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+.select-disabled{
+  opacity: 0.5;
+pointer-events: none;
+}
+footer {
+	background-color: #ffffff;
+	color: #585555;
+	padding: 20px;
+	text-align: center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+#yes, #no{  
+  text-align: center;
+font-size: 16px;  
+}

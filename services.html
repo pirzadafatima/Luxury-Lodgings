@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Services</title>
+        <link rel = "stylesheet" href = "servicesstyle.css">
+    </head>
+<body>
+    <!--image slider start-->
+ <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="images/dining.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/water.webp" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/gym.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/golf.jpg" alt="">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+  <div class = "intro">
+    <h2>Experience</h2>
+    <p>
+        Welcome to the Luxury Lodgings services page. From delicious in-room dining to thrilling water park adventures, we've got you 
+        covered. Stay fit with our state-of-the-art gym and golf course or let our experienced travel guides show you the local treasures. With something for everyone, our 
+        services are designed to provide the ultimate experience of relaxation, excitement, and adventure. Discover the luxury that knows no bounds at Luxury Lodgings.!</p>
+</div>
+<br><br>
+      <div class="flex-container">
+          <div class="c1">
+            <img src = "images/dining1.png" alt = "">
+            <h2>In-Dining Experience</h2>
+            <p>Our resort boasts a luxurious on-site restaurant where you can indulge in the most delectable cuisine prepared by our skilled chefs. Whether you're in the mood 
+                for a romantic dinner for two or a family feast, our restaurant has something to offer for everyone. Open for breakfast, lunch, and dinner, our restaurant is 
+                the perfect place to savor mouthwatering dishes and impeccable service. Prices range from $25 to $60 per person depending on the menu items.</p>
+          </div>
+
+          <div class="c2">
+            <img src = "images/golf1.jpg" alt = "">
+            <h2>Sports Experience</h2>
+            <p>Golf: Our resort features a pristine golf course that offers a challenging yet enjoyable experience for golf enthusiasts. With lush green fairways and stunning views, 
+                our golf course is the perfect place to unwind and practice your swing. The course is open from 7 am to 5 pm daily and is available to guests for a fee of $50 per 
+                person for a round of 18 holes.</p><br>
+          </div>
+      </div>
+      <br><br>
+      <div class="flex-container">
+        <div class="c1">
+          <img src = "images/gym1.jpg" alt = "">
+          <h2>Fitness Experience</h2>
+          <p>Gym: Stay fit and healthy during your stay at Luxury Lodgings with our state-of-the-art gym facilities. Our gym is equipped with the latest fitness equipment and 
+            is open 24 hours a day for your convenience. Whether you want to lift weights or do cardio, our gym has everything you need to stay in shape. Price is $30 dollar 
+            per hour.</p>
+        </div>
+
+        <div class="c2">
+          <img src = "images/water1.jpg" alt = "">
+          <h2>Water Park</h2>
+          <p>Our resort features an exciting water park with thrilling rides and slides for all ages. The water park is open from 10 am to 6 pm, and the prices are $50 per adult and 
+            $30 per child under 12 years old. Children under 3 years old can enter for free.</p><br>
+        </div>
+    </div>
+      <br><br>
+      <p> Note: All services will be automatically available to you for the entirety of your stay for an additional charge of only $200. </p>
+
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function()     <!--setInterval(function, milliseconds ...)-->
+    {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+  
+  </body>
+  </html>

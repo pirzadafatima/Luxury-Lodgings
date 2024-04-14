@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deluxe Suite</title>
+        <link rel = "stylesheet" href = "deluxestyle.css">
+    </head>
+<body>
+    <header>
+        <img src="images/d4.jpg" alt="">
+        <section class='pic'>
+           <h1>Deluxe Suite</h1>
+          <a href="booking.php"> <button>Book Now</button> </a>
+        </section>
+     </header>
+      <br><br>
+      <div class="flex-container">
+       
+          <div class="c1">
+            <h1>"Where luxury knows no bounds!"</h1>
+            <br><br>
+            <h2>Features:</h2>
+             <p> Our Deluxe Suites feature:<br><br>
+                •   King-size bed or 2 double beds<br>
+                •	Separate living room area<br>
+                •	Private terrace area with outdoor lounge chairs  <br>
+                •	Spacious attached bathroom with luxurious toiletries <br>
+                •	Flat screen TV<br>
+                •	Complimentary wireless Internet<br>
+                •	Electric lighting and 24-hour hot water<br>
+                •	Refrigerator with mini bar<br>
+                •	Daily local newspaper<br>
+                •	Valet and laundry services <br>
+                •	Tea & coffee maker for in-room hot beverages<br>
+                •	In-room Microwave <br>
+                •	24-hour room service<br>
+                •	Emergency Medical services <br>
+                •	Daily housekeeping and turndown service for a clean and well-maintained room<br>
+            </p>
+          </div>
+        
+  
+          <div class="c2">
+            <p1>Indulge in pure luxury with our Deluxe Suite, where elegance meets comfort. This spacious and magnificent suite boasts a separate living area, a lavish bedroom 
+                with plush bedding, and a private balcony overlooking our lush gardens or the sparkling ocean. Relax in style, unwind in the sophisticated ambiance, and savor 
+                the panoramic views, making your stay truly unforgettable.</p1>
+                <br><br>
+            <h2>Additional Information:</h2>
+            <p2> Ideal for 2-4 guests (including up to 2 children) <br>
+                Number of deluxe suits available: 5<br>
+                Location: On top floor <br><br>
+                Please Note: Additional beds or rollaway beds to accommodate additional guests are subject to availability and additional charges.<br>
+                <h2>Price per night: $500</h2>
+            </p2>
+          </div>
+
+      </div>
+      <br><br>
+  <div class="row">
+    <h1>Image Gallery</h1><br><br>
+    <div class="column">
+      <img src="images/d1.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/d3.png" alt="" onclick="myFunction(this);">
+    </div>
+     <div class="column">
+      <img src="images/d5.png" alt="" onclick="myFunction(this);">
+    </div> 
+    <div class="column">
+        <img src="images/d6.png" alt="" onclick="myFunction(this);">
+      </div> 
+  </div>
+  
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:60%">
+  
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+  <script>
+    function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+  </script>
+</body>
+</html>

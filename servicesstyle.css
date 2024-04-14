@@ -1,0 +1,214 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #fff;
+}
+
+.slider{
+    width: contain;
+    height: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 900px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    left: 50%;
+    width: 100%;
+    height: 900px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: relative;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    left: 500px;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 860px;
+    left: 500px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+
+  .intro h2{
+    margin-left: 200px;
+    top: 500%;
+    font-size: 80px;
+    right: 500px;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: black;
+  }
+        
+  .intro p{
+    margin-right: 480px;
+    margin-left: 480px;
+    font-size: 25px;
+    text-align: center;
+    color: darkgrey;
+    font-style: oblique;
+  }
+
+  .flex-container {
+    display: flex;
+}
+
+.flex-container .c1 {
+    flex: 1;
+    border: 2px solid rgba(65, 52, 52, 0.281);
+    margin-left: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+    background: white;
+} 
+
+.flex-container .c2 {
+    flex: 1;
+    border: 2px solid rgba(65, 52, 52, 0.281);
+    margin-right: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; 
+    background: white;
+} 
+
+.c1:first-child {
+    margin-right: 20px;
+} 
+
+/* .flex-container .c1 img{
+    float:top; 
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.flex-container .c1 img:hover, .flex-container .c2 img:hover{
+    opacity: 0.8;
+}
+
+.flex-container .c1 img, .flex-container .c2 img{
+    float:top; 
+    opacity: 1;
+    cursor: pointer;
+    width: 637px;
+    height: 367px;
+}
+
+/* .flex-container .c1 h2, .flex-container .c2 h2{
+    float:top;
+}
+
+.flex-container .c1 p, .flex-container .c2 p{
+    float:top;
+    margin-left: 700px;
+    margin-right: 400px;
+    padding-left: 30px;
+} */
+
+.flex-container .c1 .Bookbtn, .flex-container .c2 .Bookbtn { 
+    background-color: gray; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    margin-left: 200px;
+}
+  
+.flex-container .c1 .Bookbtn:hover, .flex-container .c2 .Bookbtn:hover{
+      background-color: gray; 
+      color: black;
+}

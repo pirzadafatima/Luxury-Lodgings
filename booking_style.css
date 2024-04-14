@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color:#fff;
+    text-align: center;
+}
+
+.header img {
+    max-width: 400px;
+    height: 150px;
+}
+
+.Check_in_Availability{
+margin: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.check_in,.check_out  {
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 10px;
+box-shadow: 5px 5px 10px #ccc;
+margin: 10px;
+padding: 5px;
+width: 200px;
+text-align: center;
+display: flex;
+align-content: flex-start;
+
+}
+.TotalBill{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc;
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.TotalBill h2{
+    font-size: medium;
+    margin: 20px;
+
+}
+.check_out label ,.check_in label {
+font-size: 16px;
+margin-bottom: 10px;
+text-align: center;
+display: flex;
+align-content: flex-start;
+}
+
+.check_out input , .check_in input {
+font-size: 16px;
+margin-bottom: 10px;
+}
+.check_button{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style:inherit;
+font-size: 15px;
+background-color: rgb(2, 118, 118);
+color: #fff;
+text-align: center;
+margin: 10px;
+padding: 5px;
+width: 200px;
+border-radius: 10px;
+box-shadow: 5px 10px 10px #ccc;
+cursor:pointer;
+-webkit-transition-duration: 0.1s;
+transition-duration: 0.1s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+.check_button:hover{
+box-shadow: 0 0 20px rgba(3, 142, 137, 0.5);
+-webkit-transform: scale(1.1);
+transform: scale(1.01);
+
+
+}
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-type {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.room-type img {
+    max-width: 500px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.room-type h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+
+.room-type p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.room-type select {
+
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.select-disabled{
+    opacity: 0.5;
+  pointer-events: none;
+}

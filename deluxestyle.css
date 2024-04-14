@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    align-items: left;
+    background-color: #fff;
+}
+
+header img {
+    width: 1920px;
+    height: 600px;
+    object-fit: fill;
+    filter: brightness(70%);
+  }
+  
+  
+  section {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  section button{
+    background-color: gray; 
+    border: none;
+    color: white;
+    font-size: 30px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition-duration: 1s;
+    width: 250px; 
+    cursor: pointer;
+  }
+
+  /* section button{
+    top: 50%;
+    left: 70%;
+    background-color: gray; 
+    border: none;
+    color: white;
+    padding: 15px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    border-radius: 8px;
+    transition-duration: 1s;
+    width: 150px;
+  } */
+
+  section button:hover{
+    background-color: gray; 
+    color: black;
+  }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container .c1 {
+    flex: 1;
+    border: 2px solid white;
+    margin-left: 300px;
+} 
+
+.flex-container .c2 {
+    flex: 1;
+    border: 2px solid white;
+    margin-right: 300px;
+} 
+
+.c1:first-child {
+    margin-right: 20px;
+} 
+
+
+ /* .flex-container .c1 h1 { 
+  
+}
+
+.flex-container .c1 h2 { 
+
+} */
+
+/* .flex-container .c1 p { 
+
+} */
+
+.flex-container .c2 p1 { 
+    font-style: oblique;
+    color: darkgray;
+}
+
+.flex-container .c2 p2 { 
+    margin-top: 50px;
+}
+
+.flex-container .c2 h2 { 
+ margin-top: 50px;
+}  
+
+.column {
+    float: left;
+    max-width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+
+  .row h1{
+    margin-left: 800px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    left: 1100px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
